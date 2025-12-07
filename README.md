@@ -33,12 +33,6 @@ cd backend
 docker compose build  
 docker compose up -d  
 
-Install dependencies and prepare the application:
-
-docker compose exec app composer install  
-docker compose exec app php artisan key:generate  
-docker compose exec app php artisan migrate --seed  
-
 Backend URL:
 
 http://localhost:8000  
@@ -58,7 +52,8 @@ http://localhost:8000/admin/feature-flags
 ### Setup
 
 cd frontend  
-pnpm install  
+pnpm install
+cp .env.example .env  
 pnpm dev  
 
 Frontend URL:
