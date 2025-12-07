@@ -29,9 +29,11 @@ It demonstrates:
 
 ### Setup
 
+```bash
 cd backend
 docker compose build  
 docker compose up -d  
+```
 
 Backend URL:
 
@@ -51,10 +53,12 @@ http://localhost:8000/admin/feature-flags
 
 ### Setup
 
+```bash
 cd frontend  
 pnpm install
 cp .env.example .env  
 pnpm dev  
+```
 
 Frontend URL:
 
